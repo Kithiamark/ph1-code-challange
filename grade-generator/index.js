@@ -17,7 +17,25 @@ function getGrade(mark) {
     return 'D';
   } else {
     return 'E';
+  }let grade;
+  switch (true) {
+    case (mark > 79):
+      grade = 'A';
+      break;
+    case (mark >= 60 && mark <= 79):
+      grade = 'B';
+      break;
+    case (mark >= 50 && mark <= 59):
+      grade = 'C';
+      break;
+    case (mark >= 40 && mark <= 49):
+      grade = 'D';
+      break;
+    default:
+      grade = 'E';
   }
+  return grade;
+}
 }
 
 // Prompt the user for input
